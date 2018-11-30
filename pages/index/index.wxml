@@ -1,0 +1,7 @@
+<view class='container'>
+  <view class='change'></view>
+  <view class='input-area'>
+    <navigator></navigator>
+  </view>
+  <view class='copyright'></view>
+</view>
