@@ -1,10 +1,23 @@
 <view class='container'>
-  <view class='change'></view>
-  <view class='input-area'>
-    <navigator>
-      <text class="iconfont"></text>
-      <icon class='"iconfont icon-down"'></icon>
+  <view class='change'>
+    <navigator url="/pages/change/change" hover-class="navigator-hover">
+      <text>到{{curLang.chs}}</text>
+      <text class='.iconfont icon-down'></text>
     </navigator>
   </view>
-  <view class='copyright'></view>
+  <view class='input-area'>
+    <text class="iconfont icon-close" hidden="{{hideClearIcon}}" bindtap='onTapClose'></text>
+    <view class='textarea-wrap'>
+      <textarea placeholder='请输入要翻译的文本' placeholder-style='color: #8995a1' bindblur='onConfirm' bindconfirm='onConfirm' bindinput='onInput' value='{{query}}'></textarea>
+    </view>
+    <view class='text-area'>
+      <text class='text-title'>译文</text>
+      <view class="text-result" wx:for="{{result}}" wx:key="index">
+        <text>{{item.dst}}</text>
+      </view>
+    </view>
+  </view>
+  <view class='copyright'>
+    <text>@Feng</text>
+  </view>
 </view>

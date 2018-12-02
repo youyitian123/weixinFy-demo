@@ -1,10 +1,27 @@
-/**app.wxss**/
-.container {
-  height: 100%;
+
+@import "./iconfont/iconfont.wxss";
+
+.container{
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  padding: 200rpx 0;
+  background: #f5fafe;
   box-sizing: border-box;
-} 
+  font-size: 30rpx;
+  color: #333;
+  height: 100vh;
+}
+
+.copyright{
+  flex: 1;
+  align-self: center;
+  display: flex; 
+  padding-bottom: 20rpx;
+  color:#999;
+  align-items: flex-end;
+}
+.view-hover {
+  background-color: #f3f3f3!important;
+}
+
+
+
